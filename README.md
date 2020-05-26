@@ -44,6 +44,37 @@ $ docker-compose -f docker-compose.builder.yml run --rm --service-ports start
 $ docker-compose -f docker-compose.builder.yml run --rm generate
 ```
 
+## Build Setup - using make
+
+If you are in `Linux` or `Mac` environment, you can setup the envrionmet using `make`
+
+```bash
+# install dependencies
+$ make install
+
+# serve with hot reload at localhost:<PORT>
+$ make dev
+
+# fire npm commands
+# Eg. make exec cmd="npm install axios"
+$ make exec cmd="<COMMAND>" 
+
+# build for production
+# output - .nuxt/dist/
+$ make build
+
+# launch production server
+# serve at localhost:<PORT> 
+# <PORT> specified in docker-compose.builder.yml - (default: 3001)
+$ make start
+
+# generate static project
+# output - .nuxt/dist/
+$ make generate
+
+```
+
+
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
 Dockerized development setup is done following this [article](https://hackernoon.com/a-better-way-to-develop-node-js-with-docker-cd29d3a0093).
