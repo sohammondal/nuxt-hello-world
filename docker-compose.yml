@@ -3,15 +3,12 @@ version: '3'
 networks:
   openhouse:
     driver: bridge
-# networks:
-#   default:
 
 services:
   dev:
     image: node:14.3.0
     networks:
         - openhouse
-    # network: host
     volumes:
       - nodemodules:/usr/src/service/node_modules
       - .:/usr/src/service

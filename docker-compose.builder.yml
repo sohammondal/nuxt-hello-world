@@ -18,10 +18,18 @@ services:
     extends:
       service: base
     command: npm run start
+    networks: 
+      - openhouse
+    ports: 
+      - "3001:3000"
   generate:
     extends:
       service: base
     command: npm run generate
+
+networks:
+  openhouse:
+    driver: bridge
 
 volumes:
   nodemodules:
