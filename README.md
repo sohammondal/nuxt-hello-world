@@ -81,5 +81,7 @@ Dockerized <u>development</u> setup is done following this [article](https://hac
 
 Dockerized <u>deployment</u> setup is done following this [article](https://dev.to/frontendfoxes/dockerise-your-nuxt-ssr-app-like-a-boss-a-true-vue-vixens-story-4mm6).
 
+Deployment to server using GitLab CI/CD (gitlab-runner) is done following this [article](https://medium.com/@sean_bradley/auto-devops-with-gitlab-ci-and-docker-compose-f931233f080f).
+
 ## TO-DO
 - `PORT` as varibale and passed as cli arg

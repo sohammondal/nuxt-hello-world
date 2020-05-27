@@ -19,7 +19,7 @@ services:
     restart: always
 
   nginx:
-    image: nginx
+    build: ./nginx
     container_name: nginx
     networks:
       - app-network
@@ -27,6 +27,9 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - ./nginx:/etc/nginx/conf.d
+      - web-root:/var/www/html
     depends_on:
       - app
+
+volumes:
+  - web-root:
