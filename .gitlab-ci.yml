@@ -1,0 +1,16 @@
+image: docker:latest
+services:
+  - docker:dind
+
+stages:
+  - deploy
+
+step-docker-deploy:
+  stage: deploy
+  only:
+    - master
+  tags:
+    - nuxt
+    - docker
+  script:
+    - docker-compose -f docker-compose.prod.yml up --build -d
