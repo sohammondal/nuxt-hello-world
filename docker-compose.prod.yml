@@ -32,4 +32,4 @@ services:
       - app
 
 volumes:
-  - web-root:
+  web-root:
