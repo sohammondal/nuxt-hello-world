@@ -77,8 +77,9 @@ $ make generate
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
-Dockerized development setup is done following this [article](https://hackernoon.com/a-better-way-to-develop-node-js-with-docker-cd29d3a0093).
+Dockerized <u>development</u> setup is done following this [article](https://hackernoon.com/a-better-way-to-develop-node-js-with-docker-cd29d3a0093).
 
+Dockerized <u>deployment</u> setup is done following this [article](https://dev.to/frontendfoxes/dockerise-your-nuxt-ssr-app-like-a-boss-a-true-vue-vixens-story-4mm6).
 
 ## TO-DO
 - `PORT` as varibale and passed as cli arg
