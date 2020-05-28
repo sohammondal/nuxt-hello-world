@@ -6,7 +6,7 @@ if ! [ -x "$(command -v docker-compose)" ]; then
 fi
 
 # domains=(example.org www.example.org)
-domains=(localhost)
+domains=(sandbox.openhouse.study)
 rsa_key_size=4096
 data_path="./data/certbot"
 email="soham.pf.mondal@gmail.com" # Adding a valid address is strongly recommended
