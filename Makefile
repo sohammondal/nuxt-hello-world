@@ -10,3 +10,5 @@ generate:
 	docker-compose -f docker-compose.builder.yml run --rm generate
 exec:
 	docker-compose exec dev $(cmd)
+up:
+	docker-compose -f docker-compose.prod.yml up --build

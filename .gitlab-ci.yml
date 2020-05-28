@@ -14,3 +14,14 @@ step-docker-deploy:
     - docker
   script:
     - docker-compose -f docker-compose.prod.yml up --build -d
+
+step-docker-deploy-ssl:
+  stage: deploy
+  only:
+    - prod
+  tags:
+    - nuxt
+    - docker
+  script:
+    - ./init-letsencrypt.sh
+    - docker-compose -f docker-compose.prod.yml up --build -d
